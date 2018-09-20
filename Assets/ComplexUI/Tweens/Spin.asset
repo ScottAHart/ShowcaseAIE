@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c95fdc7aa792154293f24ae302e18de, type: 3}
+  m_Name: Spin
+  m_EditorClassIdentifier: 
+  m_type: 7
+  m_name: Tween
+  m_amount: {x: 0, y: 0, z: 360}
+  m_time: 1
+  m_delay: 0
+  m_local: 1
+  m_space: 1
+  m_loopType: 0
+  m_useEase: 0
+  m_easeType: 0
+  m_alpha: 0
