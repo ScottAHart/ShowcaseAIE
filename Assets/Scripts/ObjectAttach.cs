@@ -30,12 +30,20 @@ public class ObjectAttach : MonoBehaviour {
                 if (hit.collider.gameObject.GetComponent<IActions>() != null)
                 {
                     _obj = hit.collider.gameObject;
-                    _point = hit.point - _obj.transform.position;
+                    _point = hit.point;
                     _currentTime = 0;
                     _line.gameObject.SetActive(true);
-                    _dist = Vector3.Magnitude(_obj.transform.position + _point - _connect.position); //Dist in meters
+                    _dist = Vector3.Magnitude(_point - _connect.position); //Dist in meters
                     _connectTime = _dist / _connectSpeed;
                 }
+                else
+                {
+                    _obj = null;
+                }
+            }
+            else
+            {
+                _obj = null;
             }
         }
         //If attached, set line up
@@ -45,7 +53,7 @@ public class ObjectAttach : MonoBehaviour {
             _currentTime = _currentTime > _connectTime + 5 ? _connectTime : _currentTime + Time.deltaTime;
             _line.SetPosition(0, _connect.position);
            
-            _line.SetPosition(1, Vector3.Lerp(_connect.position, _obj.transform.position + _point, _currentTime / _connectTime));
+            _line.SetPosition(1, Vector3.Lerp(_connect.position, _point, _currentTime / _connectTime));
         }
         //If connected
         if (_currentTime >= _connectTime)

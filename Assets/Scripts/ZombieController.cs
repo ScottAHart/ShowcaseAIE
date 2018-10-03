@@ -88,7 +88,7 @@ public class ZombieController : MonoBehaviour, IHitable, IActions {
     //If dies play animation and the destroy self
     public void Die()
     {
-        _animator.SetTrigger("Die");
+        if(_animator != null) _animator.SetTrigger("Die");
         //Death particle
         //Death shader?
 
