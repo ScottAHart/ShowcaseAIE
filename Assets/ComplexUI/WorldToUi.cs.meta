@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ae104b19d8d455b46aaa292c3ea54f2b
+timeCreated: 1525659255
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_target: {instanceID: 0}
+  - m_UIElement: {instanceID: 0}
+  - m_cameraPlane: {instanceID: 0}
+  - m_worldCanvas: {fileID: 1948872460297578, guid: 0003ff35dac51b044a4392b159c995d4,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
